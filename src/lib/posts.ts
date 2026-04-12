@@ -1,4 +1,11 @@
-import { kv } from "@vercel/kv";
+import { createClient } from "@vercel/kv";
+
+const KV_URL = process.env.STORAGE_KV_REST_API_URL ?? process.env.KV_REST_API_URL;
+const KV_TOKEN = process.env.STORAGE_KV_REST_API_TOKEN ?? process.env.KV_REST_API_TOKEN;
+
+const kv = KV_URL && KV_TOKEN
+  ? createClient({ url: KV_URL, token: KV_TOKEN })
+  : null;
 import fs from "fs";
 import path from "path";
 
@@ -35,10 +42,10 @@ function getPostsFromFile(): Post[] {
 }
 
 export async function getPosts(): Promise<Post[]> {
+  if (!kv) return getPostsFromFile();
   try {
     const posts = await kv.get<Post[]>("posts");
     if (posts && posts.length > 0) return posts;
-    // Fallback to file (for migration / local dev)
     return getPostsFromFile();
   } catch {
     return getPostsFromFile();
@@ -46,6 +53,7 @@ export async function getPosts(): Promise<Post[]> {
 }
 
 export async function savePosts(posts: Post[]): Promise<void> {
+  if (!kv) return;
   await kv.set("posts", posts);
 }
 

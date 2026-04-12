@@ -3,8 +3,8 @@ import { getPosts, categories } from "@/lib/posts";
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://turkverse.com";
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const posts = getPosts();
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const posts = await getPosts();
 
   const postUrls: MetadataRoute.Sitemap = posts.map((post) => ({
     url: `${BASE_URL}/blog/${post.slug}`,

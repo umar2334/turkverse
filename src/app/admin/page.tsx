@@ -16,8 +16,8 @@ const categoryColors: Record<string, string> = {
   "release-dates": "bg-green-500/10 text-green-400",
 };
 
-export default function AdminDashboard() {
-  const posts = getPosts();
+export default async function AdminDashboard() {
+  const posts = await getPosts();
 
   const stats = categories.map((cat) => ({
     ...cat,

@@ -10,8 +10,8 @@ export const metadata: Metadata = {
     "Latest Turkish drama news, episode reviews, cast biographies, and release dates. Your #1 source for Kurulus Osman, Dirilis Ertugrul, and all popular Turkish series.",
 };
 
-export default function HomePage() {
-  const posts = getPosts();
+export default async function HomePage() {
+  const posts = await getPosts();
   const [featured] = posts;
   const sidePostsTop = posts.slice(1, 4);
   const gridPosts = posts.slice(0, 6);

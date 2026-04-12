@@ -3,8 +3,8 @@ import { getRecentPosts } from "@/lib/posts";
 import PostCard from "./PostCard";
 import AdSlot from "./AdSlot";
 
-export default function Sidebar() {
-  const recent = getRecentPosts(5);
+export default async function Sidebar() {
+  const recent = await getRecentPosts(5);
 
   return (
     <aside className="space-y-6">

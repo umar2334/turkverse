@@ -101,42 +101,22 @@ export default async function EditPostPage({ params }: Props) {
 
         {/* Image */}
         <div>
-          <label className="block text-slate-300 text-sm font-medium mb-3">
-            Featured Image
+          <label className="block text-slate-300 text-sm font-medium mb-1.5">
+            Featured Image URL
           </label>
-          {/* Current image preview */}
           {post.image && (
-            <div className="mb-3 flex items-center gap-3">
+            <div className="mb-2 flex items-center gap-3">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={post.image} alt="current" className="w-20 h-14 object-cover rounded-lg border border-slate-600" />
-              <p className="text-slate-400 text-xs break-all">{post.image}</p>
             </div>
           )}
-          <div className="space-y-3">
-            <div>
-              <p className="text-slate-500 text-xs mb-1.5">Nai image upload karo (optional)</p>
-              <input
-                type="file"
-                name="imageFile"
-                accept="image/*"
-                className="w-full bg-slate-800 border border-slate-600 text-slate-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-amber-500 transition-colors file:mr-3 file:py-1 file:px-3 file:rounded-md file:border-0 file:bg-amber-500 file:text-slate-900 file:text-xs file:font-bold cursor-pointer"
-              />
-            </div>
-            <div className="flex items-center gap-3">
-              <div className="flex-1 h-px bg-slate-700" />
-              <span className="text-slate-500 text-xs">ya URL badlo</span>
-              <div className="flex-1 h-px bg-slate-700" />
-            </div>
-            <div>
-              <input
-                type="url"
-                name="imageUrl"
-                defaultValue={post.image}
-                placeholder="https://..."
-                className="w-full bg-slate-800 border border-slate-600 text-slate-100 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-amber-500 transition-colors"
-              />
-            </div>
-          </div>
+          <input
+            type="url"
+            name="imageUrl"
+            defaultValue={post.image}
+            placeholder="https://..."
+            className="w-full bg-slate-800 border border-slate-600 text-slate-100 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-amber-500 transition-colors"
+          />
         </div>
 
         {/* Tags */}

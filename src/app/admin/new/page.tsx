@@ -112,34 +112,16 @@ export default async function NewPostPage({ searchParams }: Props) {
 
         {/* Image */}
         <div>
-          <label className="block text-slate-300 text-sm font-medium mb-3">
-            Featured Image <span className="text-red-400">*</span>
+          <label className="block text-slate-300 text-sm font-medium mb-1.5">
+            Featured Image URL <span className="text-red-400">*</span>
           </label>
-          <div className="space-y-3">
-            <div>
-              <p className="text-slate-500 text-xs mb-1.5">Option 1 — File upload karo</p>
-              <input
-                type="file"
-                name="imageFile"
-                accept="image/*"
-                className="w-full bg-slate-800 border border-slate-600 text-slate-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-amber-500 transition-colors file:mr-3 file:py-1 file:px-3 file:rounded-md file:border-0 file:bg-amber-500 file:text-slate-900 file:text-xs file:font-bold cursor-pointer"
-              />
-            </div>
-            <div className="flex items-center gap-3">
-              <div className="flex-1 h-px bg-slate-700" />
-              <span className="text-slate-500 text-xs">ya</span>
-              <div className="flex-1 h-px bg-slate-700" />
-            </div>
-            <div>
-              <p className="text-slate-500 text-xs mb-1.5">Option 2 — Image URL paste karo</p>
-              <input
-                type="url"
-                name="imageUrl"
-                placeholder="https://images.unsplash.com/..."
-                className="w-full bg-slate-800 border border-slate-600 text-slate-100 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-amber-500 transition-colors"
-              />
-            </div>
-          </div>
+          <input
+            type="url"
+            name="imageUrl"
+            required
+            placeholder="https://images.unsplash.com/..."
+            className="w-full bg-slate-800 border border-slate-600 text-slate-100 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-amber-500 transition-colors"
+          />
         </div>
 
         {/* Tags */}

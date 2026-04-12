@@ -1,7 +1,5 @@
 "use server";
 
-import fs from "fs";
-import path from "path";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
@@ -9,22 +7,6 @@ import { getPosts, savePosts } from "@/lib/posts";
 import type { Post } from "@/lib/posts";
 
 const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD ?? "turkverse2026";
-
-async function resolveImage(formData: FormData): Promise<string> {
-  const file = formData.get("imageFile") as File | null;
-
-  if (file && file.size > 0) {
-    const buffer = Buffer.from(await file.arrayBuffer());
-    const ext = (file.name.split(".").pop() ?? "jpg").toLowerCase();
-    const filename = `${Date.now()}-${Math.random().toString(36).slice(2)}.${ext}`;
-    const uploadDir = path.join(process.cwd(), "public", "uploads");
-    fs.mkdirSync(uploadDir, { recursive: true });
-    fs.writeFileSync(path.join(uploadDir, filename), buffer);
-    return `/uploads/${filename}`;
-  }
-
-  return (formData.get("imageUrl") as string ?? "").trim();
-}
 
 async function buildPost(formData: FormData): Promise<Post> {
   const faqRaw = (formData.get("faqs") as string ?? "").trim();
@@ -40,7 +22,7 @@ async function buildPost(formData: FormData): Promise<Post> {
     excerpt: (formData.get("excerpt") as string).trim(),
     content: (formData.get("content") as string).trim(),
     category: (formData.get("category") as string).trim(),
-    image: await resolveImage(formData),
+    image: ((formData.get("imageUrl") as string) ?? "").trim(),
     author: (formData.get("author") as string).trim() || "TurkVerse Team",
     date: (formData.get("date") as string).trim(),
     readTime: (formData.get("readTime") as string).trim() || "5 min read",

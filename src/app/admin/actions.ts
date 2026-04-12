@@ -76,12 +76,12 @@ export async function logoutAction() {
 
 export async function createPostAction(formData: FormData) {
   const post = await buildPost(formData);
-  const all = getPosts();
+  const all = await getPosts();
   if (all.some((p) => p.slug === post.slug)) {
     redirect("/admin/new?error=slug");
   }
   all.unshift(post);
-  savePosts(all);
+  await savePosts(all);
   revalidatePath("/");
   revalidatePath("/blog/[slug]", "page");
   revalidatePath("/category/[category]", "page");
@@ -92,14 +92,14 @@ export async function updatePostAction(originalSlug: string, formData: FormData)
   const updated = await buildPost(formData);
   // If no new image provided, keep the old one
   if (!updated.image) {
-    const existing = getPosts().find((p) => p.slug === originalSlug);
+    const existing = (await getPosts()).find((p) => p.slug === originalSlug);
     if (existing) updated.image = existing.image;
   }
-  const all = getPosts();
+  const all = await getPosts();
   const idx = all.findIndex((p) => p.slug === originalSlug);
   if (idx !== -1) {
     all[idx] = updated;
-    savePosts(all);
+    await savePosts(all);
   }
   revalidatePath("/");
   revalidatePath("/blog/[slug]", "page");
@@ -109,8 +109,8 @@ export async function updatePostAction(originalSlug: string, formData: FormData)
 
 export async function deletePostAction(formData: FormData) {
   const slug = formData.get("slug") as string;
-  const all = getPosts().filter((p) => p.slug !== slug);
-  savePosts(all);
+  const all = (await getPosts()).filter((p) => p.slug !== slug);
+  await savePosts(all);
   revalidatePath("/");
   revalidatePath("/blog/[slug]", "page");
   revalidatePath("/category/[category]", "page");

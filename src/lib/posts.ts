@@ -1,3 +1,4 @@
+import { kv } from "@vercel/kv";
 import fs from "fs";
 import path from "path";
 
@@ -24,7 +25,7 @@ export const categories = [
 
 const DATA_FILE = path.join(process.cwd(), "data", "posts.json");
 
-export function getPosts(): Post[] {
+function getPostsFromFile(): Post[] {
   try {
     const raw = fs.readFileSync(DATA_FILE, "utf-8");
     return JSON.parse(raw) as Post[];
@@ -33,18 +34,32 @@ export function getPosts(): Post[] {
   }
 }
 
-export function savePosts(posts: Post[]): void {
-  fs.writeFileSync(DATA_FILE, JSON.stringify(posts, null, 2), "utf-8");
+export async function getPosts(): Promise<Post[]> {
+  try {
+    const posts = await kv.get<Post[]>("posts");
+    if (posts && posts.length > 0) return posts;
+    // Fallback to file (for migration / local dev)
+    return getPostsFromFile();
+  } catch {
+    return getPostsFromFile();
+  }
 }
 
-export function getPostBySlug(slug: string): Post | undefined {
-  return getPosts().find((p) => p.slug === slug);
+export async function savePosts(posts: Post[]): Promise<void> {
+  await kv.set("posts", posts);
 }
 
-export function getPostsByCategory(category: string): Post[] {
-  return getPosts().filter((p) => p.category === category);
+export async function getPostBySlug(slug: string): Promise<Post | undefined> {
+  const posts = await getPosts();
+  return posts.find((p) => p.slug === slug);
 }
 
-export function getRecentPosts(count = 4): Post[] {
-  return getPosts().slice(0, count);
+export async function getPostsByCategory(category: string): Promise<Post[]> {
+  const posts = await getPosts();
+  return posts.filter((p) => p.category === category);
+}
+
+export async function getRecentPosts(count = 4): Promise<Post[]> {
+  const posts = await getPosts();
+  return posts.slice(0, count);
 }

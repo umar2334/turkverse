@@ -1,13 +1,21 @@
-import { createClient } from "@vercel/kv";
-
-const KV_URL = process.env.STORAGE_KV_REST_API_URL ?? process.env.KV_REST_API_URL;
-const KV_TOKEN = process.env.STORAGE_KV_REST_API_TOKEN ?? process.env.KV_REST_API_TOKEN;
-
-const kv = KV_URL && KV_TOKEN
-  ? createClient({ url: KV_URL, token: KV_TOKEN })
-  : null;
+import { Redis } from "@upstash/redis";
 import fs from "fs";
 import path from "path";
+
+const REDIS_URL =
+  process.env.STORAGE_KV_REST_API_URL ??
+  process.env.KV_REST_API_URL ??
+  process.env.UPSTASH_REDIS_REST_URL;
+
+const REDIS_TOKEN =
+  process.env.STORAGE_KV_REST_API_TOKEN ??
+  process.env.KV_REST_API_TOKEN ??
+  process.env.UPSTASH_REDIS_REST_TOKEN;
+
+const redis =
+  REDIS_URL && REDIS_TOKEN
+    ? new Redis({ url: REDIS_URL, token: REDIS_TOKEN })
+    : null;
 
 export type Post = {
   slug: string;
@@ -42,9 +50,9 @@ function getPostsFromFile(): Post[] {
 }
 
 export async function getPosts(): Promise<Post[]> {
-  if (!kv) return getPostsFromFile();
+  if (!redis) return getPostsFromFile();
   try {
-    const posts = await kv.get<Post[]>("posts");
+    const posts = await redis.get<Post[]>("posts");
     if (posts && posts.length > 0) return posts;
     return getPostsFromFile();
   } catch {
@@ -53,8 +61,8 @@ export async function getPosts(): Promise<Post[]> {
 }
 
 export async function savePosts(posts: Post[]): Promise<void> {
-  if (!kv) return;
-  await kv.set("posts", posts);
+  if (!redis) return;
+  await redis.set("posts", posts);
 }
 
 export async function getPostBySlug(slug: string): Promise<Post | undefined> {

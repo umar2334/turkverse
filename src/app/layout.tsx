@@ -9,6 +9,7 @@ const ADSENSE_PUB_ID = process.env.NEXT_PUBLIC_ADSENSE_PUB_ID;
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.turkdrama.live"),
   title: {
     default: "TurkVerse — Turkish Series News, Reviews & Cast Biographies",
     template: "%s | TurkVerse",
@@ -16,9 +17,13 @@ export const metadata: Metadata = {
   description:
     "TurkVerse is your ultimate guide to Turkish dramas. Get the latest news, cast biographies, episode reviews, and release dates for all popular Turkish series.",
   keywords: ["Turkish series", "Turkish drama", "Kurulus Osman", "Dirilis Ertugrul", "Turkish cast", "episode review"],
+  alternates: {
+    canonical: "https://www.turkdrama.live",
+  },
   openGraph: {
     siteName: "TurkVerse",
     type: "website",
+    url: "https://www.turkdrama.live",
   },
 };
 

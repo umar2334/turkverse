@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getPosts, categories } from "@/lib/posts";
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://turkdrama.live";
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.turkdrama.live";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const posts = await getPosts();

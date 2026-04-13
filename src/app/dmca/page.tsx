@@ -52,7 +52,7 @@ export default function DmcaPage() {
 
         <h2>Submit a DMCA Request</h2>
         <p>
-          Send all DMCA notices to: <span className="text-amber-500">dmca@turkverse.com</span>
+          Send all DMCA notices to: <span className="text-amber-500">dmca@turkdrama.live</span>
         </p>
         <p>
           We will acknowledge receipt of your complaint within 48 hours and will investigate and respond within 10 business days.

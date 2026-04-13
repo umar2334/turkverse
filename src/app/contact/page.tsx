@@ -74,7 +74,7 @@ export default function ContactPage() {
       </form>
 
       <div className="mt-10 pt-8 border-t border-slate-700 text-sm text-slate-400">
-        <p>You can also reach us at: <span className="text-amber-500">contact@turkverse.com</span></p>
+        <p>You can also reach us at: <span className="text-amber-500">contact@turkdrama.live</span></p>
         <p className="mt-1">Response time: within 48 hours (Mon–Fri)</p>
       </div>
     </div>

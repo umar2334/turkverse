@@ -21,7 +21,7 @@ export default function PrivacyPolicyPage() {
 
       <div className="prose max-w-none space-y-6">
         <p>
-          At <strong>TurkVerse</strong> (turkverse.com), accessible from our website, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by TurkVerse and how we use it.
+          At <strong>TurkVerse</strong> (turkdrama.live), accessible from our website, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by TurkVerse and how we use it.
         </p>
 
         <h2>Information We Collect</h2>

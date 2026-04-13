@@ -8,7 +8,7 @@ import Sidebar from "@/components/Sidebar";
 import AdSlot from "@/components/AdSlot";
 import FaqSchema from "@/components/FaqSchema";
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://turkverse.com";
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://turkdrama.live";
 
 type Props = { params: Promise<{ slug: string }> };
 

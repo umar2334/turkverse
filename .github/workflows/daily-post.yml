@@ -15,8 +15,7 @@ jobs:
           node-version: "20"
       - run: npm ci
       - name: Generate new post
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        
         run: node scripts/generate-post.mjs
       - name: Commit and push
         run: |

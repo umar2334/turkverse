@@ -1,0 +1,31 @@
+name: Daily Post Publisher
+
+on:
+  schedule:
+    - cron: "0 18 * * *"
+  workflow_dispatch:
+
+jobs:
+  publish-post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: npm ci
+      - name: Generate new post
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/generate-post.mjs
+      - name: Commit and push
+        run: |
+          git config user.name "TurkVerse Bot"
+          git config user.email "bot@turkdrama.live"
+          git add data/posts.json
+          git diff --staged --quiet || git commit -m "Daily post: $(date +'%B %d, %Y')"
+          git push
+      - name: Seed to Redis
+        env:
+          ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
+        run: curl -f "https://www.turkdrama.live/api/seed?secret=$ADMIN_PASSWORD"

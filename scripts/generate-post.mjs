@@ -386,8 +386,303 @@ const postPool = [
   }
 ];
 
+// English posts targeting USA, UK, Europe, Middle East (high AdSense RPM)
+const englishPostPool = [
+  {
+    slug: "best-turkish-dramas-on-netflix-2026",
+    title: "Best Turkish Dramas on Netflix in 2026 – Complete Ranked List",
+    excerpt: "Netflix has transformed how the world watches Turkish dramas. From historical epics to modern thrillers, here are the best Turkish series on Netflix in 2026 that you absolutely cannot miss.",
+    content: `<p>Turkish television has conquered Netflix. What started as a regional broadcasting phenomenon has become one of the streaming platform's most valuable content categories — watched in over 190 countries and generating billions in viewing hours annually. In 2026, the selection has never been better.</p>
+
+<p>Whether you are new to Turkish dramas or a seasoned fan looking for what to watch next, this is your definitive guide to the best Turkish series available on Netflix right now.</p>
+
+<h2>1. Diriliş: Ertuğrul (Resurrection: Ertugrul)</h2>
+<p><strong>Genre:</strong> Historical Epic | <strong>Seasons:</strong> 5 | <strong>Episodes:</strong> 150+</p>
+<p>The drama that introduced Turkish television to the global mainstream. Set in 13th-century Anatolia, it follows the life of <strong>Ertuğrul Bey</strong>, father of Osman I who founded the Ottoman Empire. With an estimated 500 million viewers across 60+ countries, Ertugrul remains the most-watched Turkish drama in history. Its blend of Islamic values, medieval action, and complex political intrigue made it a phenomenon particularly in Muslim-majority countries but increasingly in Western markets too.</p>
+
+<h2>2. The Protector (Hakan: Muhafız)</h2>
+<p><strong>Genre:</strong> Supernatural Thriller | <strong>Seasons:</strong> 4 | <strong>Episodes:</strong> 32</p>
+<p>Netflix's first original Turkish production — and arguably still their best. <strong>Çağatay Ulusoy</strong> plays Hakan, a young Istanbul shopkeeper who discovers he is the last in a line of protectors tasked with defending the city from an ancient evil. Filmed entirely on location across Istanbul's most iconic neighborhoods, The Protector is visually stunning and genuinely suspenseful. It introduced Turkish drama to Western audiences who might never have discovered it otherwise.</p>
+
+<h2>3. Love 101 (Aşk 101)</h2>
+<p><strong>Genre:</strong> Coming-of-Age Romance | <strong>Seasons:</strong> 2</p>
+<p>Set in the 1990s, Love 101 follows a group of misfit high school students who attempt to make their favorite teacher fall in love so she will not leave their school. It perfectly captures the nostalgia of adolescence — the intensity of first friendships, first love, and the terror of an unknown future. For Western audiences, it draws favorable comparisons to <em>Stranger Things</em> and <em>Skins</em>.</p>
+
+<h2>4. Fatma</h2>
+<p><strong>Genre:</strong> Psychological Thriller | <strong>Seasons:</strong> 1 | <strong>Episodes:</strong> 6</p>
+<p>A cleaning woman accidentally kills a man who threatens her and discovers she feels nothing — which leads her down a dark path she cannot escape. <strong>Burcu Biricik</strong> won the Best Actress award at the International Emmy Awards for this role. At just 6 episodes, Fatma is the perfect entry point for viewers who want Turkish storytelling quality without a 100-episode commitment.</p>
+
+<h2>5. Another Self (İçimden Bir Ses)</h2>
+<p><strong>Genre:</strong> Spiritual Drama | <strong>Seasons:</strong> 2</p>
+<p>Three women in their 30s travel to an Aegean village for a family constellation therapy session that changes all their lives. This is the rare Turkish drama that speaks directly to Western wellness culture — themes of generational trauma, self-discovery, and healing resonate strongly with European and American audiences.</p>
+
+<h2>6. Ethos (Bir Başkadır)</h2>
+<p><strong>Genre:</strong> Drama | <strong>Seasons:</strong> 1 | <strong>Episodes:</strong> 8</p>
+<p>Perhaps the most artistically accomplished Turkish series on Netflix. Through the stories of eight characters from different social backgrounds in Istanbul, Ethos examines class, religion, modernity, and mental health in contemporary Turkey. It won the International Emmy for Best Drama Series — the first Turkish drama to do so.</p>
+
+<h2>Where to Start If You Are New</h2>
+<p>If you have never watched a Turkish drama, start with <strong>Fatma</strong> (6 episodes, intense, award-winning) or <strong>The Protector</strong> (action-driven, accessible). If you want something epic, <strong>Ertugrul</strong> is an investment — but one that pays back enormously.</p>
+
+<h2>TurkVerse Verdict</h2>
+<p>Turkish drama on Netflix in 2026 offers something for everyone — historical epics, psychological thrillers, coming-of-age stories, and supernatural adventures. The production quality rivals Hollywood, and the storytelling often surpasses it. Start watching tonight.</p>`,
+    category: "reviews",
+    image: "https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?w=800&q=80",
+    author: "TurkVerse Team",
+    readTime: "7 min read",
+    tags: ["Turkish dramas Netflix", "best Turkish series 2026", "Netflix Turkish shows", "Ertugrul Netflix", "The Protector Netflix", "Turkish TV 2026"],
+    faqs: [
+      { q: "Which Turkish drama is best for beginners on Netflix?", a: "Fatma (6 episodes) or The Protector are perfect starting points — short, gripping, and available with English subtitles." },
+      { q: "Is Ertugrul still on Netflix?", a: "Availability varies by region. It is on Netflix in many countries including the Middle East, South Asia, and parts of Europe." },
+      { q: "Are Turkish dramas on Netflix dubbed in English?", a: "Most Turkish Netflix originals have English dubbing. Older series typically have English subtitles." },
+      { q: "What is the highest-rated Turkish drama on Netflix?", a: "Ethos (Bir Başkadır) won the International Emmy for Best Drama. Fatma's lead actress won Best Actress at the same awards." },
+      { q: "How many Turkish dramas are on Netflix?", a: "Netflix has over 20 Turkish original productions and licenses many more from Turkish broadcasters — the catalogue grows every year." }
+    ]
+  },
+  {
+    slug: "top-10-turkish-actors-world-famous-2026",
+    title: "Top 10 Turkish Actors Who Became World Famous – 2026 List",
+    excerpt: "Turkish actors are no longer just regional stars. These 10 performers have built genuine international fanbases across Europe, the Middle East, Latin America, and beyond. Here is our definitive ranking for 2026.",
+    content: `<p>The global rise of Turkish drama has created something unprecedented — a generation of Turkish actors with genuine worldwide celebrity. These are not just popular in their home country; they have fans in Brazil, Indonesia, Pakistan, Saudi Arabia, Germany, and the United States.</p>
+
+<p>Here are the 10 Turkish actors who have achieved the most remarkable international recognition in 2026.</p>
+
+<h2>1. Çağatay Ulusoy</h2>
+<p>The face of Turkish drama's international expansion. His role as Hakan in Netflix's <strong>The Protector</strong> introduced him to global streaming audiences. With over 15 million Instagram followers from dozens of countries, Ulusoy is arguably Turkey's most internationally recognized actor in 2026. His upcoming projects are announced events in dozens of countries simultaneously.</p>
+
+<h2>2. Engin Altan Düzyatan</h2>
+<p>Ertugrul made him a household name from Morocco to Malaysia. Playing the iconic <strong>Ertuğrul Bey</strong> across 5 seasons gave him a level of recognition that most actors never achieve in a lifetime. He is particularly celebrated across Muslim-majority countries where the show aired on state television.</p>
+
+<h2>3. Burak Özçivit</h2>
+<p>Star of <strong>Kurulus: Osman</strong> and the legendary romantic drama <strong>Kara Sevda</strong> (Endless Love). Özçivit has the rare ability to dominate both historical epic and modern romance genres. Kara Sevda won the International Emmy for Best Drama, bringing him to global attention beyond his existing fanbase.</p>
+
+<h2>4. Kıvanç Tatlıtuğ</h2>
+<p>The actor who proved Turkish romance could go global. <strong>Kara Sevda</strong> aired in over 70 countries, and Tatlıtuğ's performance was central to its success. His recent work in <strong>Aile</strong> (Family) demonstrated his dramatic range to a new generation of viewers.</p>
+
+<h2>5. Hande Erçel</h2>
+<p>The most followed Turkish actress on Instagram globally, with over 30 million followers. <strong>Sen Çal Kapımı</strong> (You Knock on My Door) became a pandemic-era phenomenon watched in over 100 countries. Her fanbase in Latin America, the Middle East, and Europe rivals that of Hollywood stars.</p>
+
+<h2>6. Demet Özdemir</h2>
+<p>Co-star of Sen Çal Kapımı and lead of <strong>Benim Adım Farah</strong>. Özdemir has built a reputation for emotional depth and versatility that international audiences respond to strongly. Her performances consistently trend globally on social media the day episodes air.</p>
+
+<h2>7. Kerem Bürsin</h2>
+<p>Sen Çal Kapımı's male lead became an overnight global star. His on-screen partnership with Hande Erçel generated one of Turkish drama's most passionate international fanbases. His move toward international productions signals the next phase of Turkish acting talent crossing over.</p>
+
+<h2>8. Tuba Büyüküstün</h2>
+<p>A pioneering figure in Turkish drama's international story. Her early work in <strong>Fatih Harbiye</strong> and later in <strong>Medcezir</strong> (Turkey's Grey's Anatomy adaptation) proved that Turkish actresses could carry shows that compete globally. Respected by critics and beloved by fans.</p>
+
+<h2>9. Barış Arduç</h2>
+<p>His performance as Sultan Alparslan in <strong>Alparslan: Büyük Selçuklu</strong> brought him international recognition particularly in Muslim-majority countries. But it is his romantic drama work — particularly <strong>Yalı Çapkını</strong>'s later seasons — that has built him a more diverse global following.</p>
+
+<h2>10. Mert Ramazan Demir</h2>
+<p>The newest global breakout on this list. His portrayal of Ferit in <strong>Yalı Çapkını</strong> transformed him from a little-known actor into one of Turkish television's biggest stars. International fan accounts in Arabic, Spanish, English, and Urdu appeared within months of the drama's premiere.</p>
+
+<h2>TurkVerse Verdict</h2>
+<p>Turkish acting talent is now genuinely world-class. These 10 performers are not just good by regional standards — they are competing with and often surpassing international peers in emotional range, physical performance, and the ability to make audiences feel something real.</p>`,
+    category: "cast",
+    image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800&q=80",
+    author: "TurkVerse Team",
+    readTime: "8 min read",
+    tags: ["Turkish actors 2026", "famous Turkish actors", "Cagatay Ulusoy", "Hande Ercel", "Burak Ozcivit", "Turkish celebrities", "world famous Turkish stars"],
+    faqs: [
+      { q: "Who is the most famous Turkish actor internationally?", a: "Çağatay Ulusoy and Engin Altan Düzyatan have the broadest international recognition in 2026." },
+      { q: "Which Turkish actress has the most Instagram followers?", a: "Hande Erçel with over 30 million followers is the most followed Turkish actress globally." },
+      { q: "Which Turkish drama won an International Emmy?", a: "Kara Sevda (Endless Love) won International Emmy for Best Drama. Ethos won Best Drama Series." },
+      { q: "Are Turkish actors popular in Arab countries?", a: "Extremely popular — Turkish dramas have been a dominant force in Arab media for over 15 years." },
+      { q: "Which Turkish actor is most popular in the USA?", a: "Çağatay Ulusoy via Netflix's The Protector has the highest profile among American audiences." }
+    ]
+  },
+  {
+    slug: "kara-sevda-endless-love-review-international",
+    title: "Kara Sevda (Endless Love) – The Turkish Drama That Won an International Emmy and Conquered 70 Countries",
+    excerpt: "Kara Sevda is the Turkish drama that proved Turkish storytelling could compete on the world stage. It won the International Emmy for Best Drama Series and aired in over 70 countries. Here is why it deserves every award it received.",
+    content: `<p>In November 2017, something extraordinary happened at the International Emmy Awards in New York. <strong>Kara Sevda</strong> — a Turkish drama about obsessive love, class conflict, and sacrifice — walked away with the Best Drama Series award, beating productions from established television powerhouses including France, Brazil, and the United States.</p>
+
+<p>It was a moment that announced Turkish television to the world in the most formal way possible. And Kara Sevda had earned every bit of it.</p>
+
+<h2>The Story</h2>
+<p><strong>Nihan</strong> comes from a wealthy Istanbul family with a complicated past. <strong>Kemal</strong> is an honest, passionate young man from a working-class background who falls deeply in love with her. Their love story begins beautifully — but it is quickly surrounded by forces determined to keep them apart: family opposition, class prejudice, and a dangerous rival named <strong>Emir Kozcuoğlu</strong>, the man Nihan is forced to marry.</p>
+
+<p>What makes Kara Sevda exceptional is not the love story itself — it is how the drama examines what obsessive love does to people. Kemal's devotion to Nihan crosses boundaries. Emir's possessiveness becomes something darker. Even Nihan's choices are morally complicated. Nobody in this drama is simply good or simply evil — everyone is damaged, driven, and achingly human.</p>
+
+<h2>The Cast That Delivered</h2>
+<ul>
+<li><strong>Burak Özçivit as Kemal Soydere</strong> — His portrayal of a man consumed by love is simultaneously sympathetic and disturbing. Özçivit never lets the character become a simple romantic hero.</li>
+<li><strong>Neslihan Atagül as Nihan Sezin</strong> — One of Turkish television's finest performances. Her Nihan is torn between duty and desire, love and survival.</li>
+<li><strong>Kaan Urgancıoğlu as Emir Kozcuoğlu</strong> — The villain who made audiences love to hate him. His performance created one of Turkish drama's most memorable antagonists.</li>
+</ul>
+
+<h2>Why It Works Globally</h2>
+<p>Kara Sevda's themes are universal. Class difference in romance, family obligation versus personal desire, the line between love and obsession — these are not specifically Turkish concerns. They resonate in Istanbul, Cairo, Buenos Aires, Jakarta, and London equally.</p>
+
+<p>The drama aired in over 70 countries including across Latin America (where it was dubbed in Spanish and Portuguese), the Arab world, Eastern Europe, and Southeast Asia. In Chile and Ecuador, it regularly outrated local productions in its timeslot.</p>
+
+<h2>The International Emmy Win</h2>
+<p>The International Emmy Award for Best Drama Series is among the most prestigious recognitions in global television. Previous winners included shows from France, Brazil, and Israel. Kara Sevda's victory was not just a personal triumph for its cast and crew — it was a watershed moment for Turkish television's global reputation.</p>
+
+<h2>TurkVerse Verdict</h2>
+<p>Kara Sevda is the Turkish drama that deserves to be on every serious viewer's watchlist regardless of language or cultural background. Emotionally devastating, beautifully performed, and genuinely world-class. <strong>TurkVerse Rating: 9.3/10</strong></p>`,
+    category: "reviews",
+    image: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=800&q=80",
+    author: "TurkVerse Team",
+    readTime: "7 min read",
+    tags: ["Kara Sevda", "Endless Love Turkish drama", "International Emmy", "Burak Ozcivit", "Neslihan Atagul", "best Turkish drama ever", "Turkish drama awards"],
+    faqs: [
+      { q: "Did Kara Sevda win an Emmy?", a: "Yes — Kara Sevda won the International Emmy Award for Best Drama Series in 2017." },
+      { q: "How many countries aired Kara Sevda?", a: "Over 70 countries including Latin America, the Arab world, Eastern Europe, and Southeast Asia." },
+      { q: "Where can I watch Kara Sevda with English subtitles?", a: "It is available on several streaming platforms including YouTube channels dedicated to Turkish drama with English subtitles." },
+      { q: "How many episodes does Kara Sevda have?", a: "74 episodes across 3 seasons." },
+      { q: "Is Kara Sevda suitable for all ages?", a: "It deals with mature themes including obsessive love and violence. Best for viewers 16 and above." }
+    ]
+  },
+  {
+    slug: "turkish-drama-industry-facts-2026",
+    title: "Turkish Drama Industry in 2026 – 10 Facts That Will Surprise You",
+    excerpt: "Turkey is now the world's second-largest exporter of TV content after the United States. Here are 10 facts about the Turkish drama industry that explain how a regional TV market became a global entertainment powerhouse.",
+    content: `<p>If someone told you twenty years ago that Turkey would become the world's second-largest exporter of television content, you would not have believed them. Yet here we are in 2026, and Turkish dramas — <em>dizi</em> in Turkish — are watched by an estimated 700 million people across 160 countries.</p>
+
+<p>How did this happen? Here are 10 facts that explain the extraordinary rise of Turkish television.</p>
+
+<h2>1. Turkey Is the World's #2 TV Exporter</h2>
+<p>Only the United States exports more television content than Turkey. Turkish drama exports generate over <strong>$500 million annually</strong> and growing — a figure that has increased tenfold in the past decade. This is not a niche market; it is a genuine global industry.</p>
+
+<h2>2. The First Big Export Was an Accident</h2>
+<p><em>Gümüş</em> (Noor in Arabic) was sold to MBC in 2008 almost as an afterthought. Nobody predicted what would happen — it became the most-watched programme in Arab television history at the time, with the series finale watched by an estimated <strong>85 million viewers</strong> across the Arab world simultaneously.</p>
+
+<h2>3. Turkish Dramas Are Longer Than American TV</h2>
+<p>A typical Turkish drama episode runs <strong>120-150 minutes</strong> — roughly twice the length of a standard American drama episode. This format demands extraordinary commitment from writers, directors, and cast, but it also allows for a depth of character development that shorter formats cannot match.</p>
+
+<h2>4. The Industry Employs Over 100,000 People</h2>
+<p>Turkish television production is one of the country's largest employment sectors. A single major production like Kurulus: Osman employs hundreds of cast members, thousands of extras, and hundreds more in technical and support roles. The industry's economic footprint extends far beyond screen time.</p>
+
+<h2>5. Latin America Is the Fastest Growing Market</h2>
+<p>While Turkish dramas are historically most popular in the Arab world, Latin America has emerged as the fastest-growing market. Countries like Chile, Ecuador, and Argentina have passionate Turkish drama fan communities that rival anything in the Middle East.</p>
+
+<h2>6. Ertugrul Changed Pakistani Television History</h2>
+<p>When Pakistan's state broadcaster <strong>PTV</strong> aired Diriliş: Ertuğrul in Urdu dubbing in 2020, it broke every viewership record in the channel's history. Pakistani Prime Minister Imran Khan personally endorsed the drama. The show's cultural impact in Pakistan was equivalent to a major religious holiday.</p>
+
+<h2>7. Netflix Changed Everything</h2>
+<p>Netflix's investment in Turkish original content beginning in 2018 transformed the industry's global visibility overnight. <em>The Protector</em> was watched in over 190 countries in its first month — exposing Turkish drama to markets it had never reached before including the United States and Western Europe.</p>
+
+<h2>8. Turkish Actors Are Now Global Celebrities</h2>
+<p>Hande Erçel has over 30 million Instagram followers from dozens of countries. Çağatay Ulusoy is recognized on the streets of Madrid, Jakarta, and Karachi equally. This kind of global celebrity was inconceivable for Turkish actors just fifteen years ago.</p>
+
+<h2>9. The Historical Epic Genre Is Turkey's Biggest Export</h2>
+<p>Dramas set in Ottoman or Islamic history — Ertugrul, Kurulus Osman, Alparslan, Barbaroslar — generate the most export revenue and have the widest international reach. The combination of Islamic values, historical education, and epic storytelling resonates across Muslim-majority markets spanning 1.8 billion people.</p>
+
+<h2>10. The Industry Is Still Growing</h2>
+<p>In 2026, Turkish content investment is at an all-time high. International co-productions, Netflix originals, Amazon Prime investments, and traditional broadcast exports are all growing simultaneously. The Turkish drama industry's best years are arguably still ahead of it.</p>
+
+<h2>TurkVerse Verdict</h2>
+<p>Turkish television's global rise is one of the most remarkable cultural success stories of the 21st century. Understanding the industry behind the dramas makes watching them even more impressive.</p>`,
+    category: "news",
+    image: "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&q=80",
+    author: "TurkVerse Team",
+    readTime: "6 min read",
+    tags: ["Turkish drama industry", "Turkish TV exports", "dizi facts", "Turkish entertainment 2026", "Netflix Turkey", "Turkish drama history", "global TV"],
+    faqs: [
+      { q: "How much does Turkey earn from TV exports?", a: "Over $500 million annually — and growing every year." },
+      { q: "Which country watches the most Turkish drama?", a: "Arab countries historically, but Latin America is the fastest growing market." },
+      { q: "How long are Turkish drama episodes?", a: "Typically 120-150 minutes — roughly twice the length of American TV episodes." },
+      { q: "When did Turkish dramas go global?", a: "The breakthrough was Noor (Gümüş) on Arab TV in 2008, which was watched by 85 million viewers for its finale." },
+      { q: "Is Turkish drama bigger than Korean drama?", a: "Turkish drama has a larger geographic footprint and longer history. Korean drama dominates in East Asia and has stronger Western streaming presence. Both are genuinely global forces." }
+    ]
+  },
+  {
+    slug: "sen-cal-kapimi-you-knock-on-my-door-review-english",
+    title: "Sen Çal Kapımı (You Knock on My Door) – The Turkish Drama That Took Over the World During a Pandemic",
+    excerpt: "When the world went into lockdown in 2020, Sen Çal Kapımı arrived on YouTube and became a global phenomenon. Here is why this Turkish romantic drama earned 300 million views and a fanbase across 100+ countries.",
+    content: `<p>There are dramas that find their audience. And then there are dramas that find the entire world. <strong>Sen Çal Kapımı</strong> — which translates to <em>You Knock on My Door</em> — is definitively the latter.</p>
+
+<p>Premiering in July 2020 as the world sat in COVID lockdown, the drama arrived at the exact moment hundreds of millions of people were sitting at home, searching for something to watch, something to feel, something to escape into. What they found was Eda and Serkan — and they never quite recovered.</p>
+
+<h2>The Story</h2>
+<p><strong>Eda Yıldız</strong> is a bright, witty landscape architecture student whose scholarship was mysteriously cancelled. The man responsible? <strong>Serkan Bolat</strong>, a wealthy, emotionally closed-off businessman who runs the company that terminated her funding. When circumstances force them into a fake relationship arrangement, what begins as a business transaction gradually becomes the real thing.</p>
+
+<p>The premise is familiar — enemies to lovers, fake dating, class difference. But the execution is what separates Sen Çal Kapımı from every other drama that uses these tropes. The writing is sharp. The chemistry between the leads is electric. And the humor — genuinely funny humor, not just dramatic relief — sets it apart from most Turkish dramas of its era.</p>
+
+<h2>Hande Erçel and Kerem Bürsin</h2>
+<p>The casting of <strong>Hande Erçel</strong> as Eda and <strong>Kerem Bürsin</strong> as Serkan was either the luckiest accident or the best decision in recent Turkish television history. Their chemistry was immediate and overwhelming. Fan accounts dedicated to their real-life relationship (they dated for two years after the drama) appeared in Arabic, Spanish, English, Indonesian, and Urdu within weeks of the premiere.</p>
+
+<p>Hande Erçel's portrayal of Eda — playful, stubborn, emotionally open — made her one of the most loved characters in Turkish drama history. Kerem Bürsin's Serkan is the classic emotionally unavailable male lead, but played with enough vulnerability that audiences root for his transformation rather than resenting his coldness.</p>
+
+<h2>The YouTube Phenomenon</h2>
+<p>Sen Çal Kapımı was uploaded to YouTube with subtitles in multiple languages simultaneously — a first for a major Turkish production. English, Arabic, Spanish, Portuguese, and Italian subtitles were available from day one. The result was extraordinary: episodes regularly accumulated <strong>10-15 million views within 48 hours</strong> of upload.</p>
+
+<p>By the end of its run, the series had accumulated over <strong>300 million views on YouTube</strong> alone — making it one of the most-watched non-English language series in streaming history.</p>
+
+<h2>Global Fanbase</h2>
+<p>The drama's international fanbase — who call themselves <em>EdSer</em> fans — organized viewing parties across social media, created fan art, fan fiction, and fan translations in dozens of languages, and trended globally on Twitter multiple times per week. In Latin America, the drama's popularity rivaled that of local telenovelas. In the Middle East, it dominated social media conversations about entertainment for months.</p>
+
+<h2>Where to Watch</h2>
+<p>Sen Çal Kapımı is available on YouTube with English subtitles on the Star TV official international channel. It is also available on various regional streaming platforms.</p>
+
+<h2>TurkVerse Verdict</h2>
+<p>Sen Çal Kapımı is the Turkish romantic drama by which all others will be judged for years to come. 52 episodes, 300 million views, fans in 100+ countries — and a love story that genuinely deserved all of it. <strong>TurkVerse Rating: 9.0/10</strong></p>`,
+    category: "reviews",
+    image: "https://images.unsplash.com/photo-1516589091380-5d8e87df6999?w=800&q=80",
+    author: "TurkVerse Team",
+    readTime: "7 min read",
+    tags: ["Sen Cal Kapimi", "You Knock on My Door", "Hande Ercel", "Kerem Bursin", "Turkish romantic drama", "best Turkish drama 2020", "EdSer", "YouTube Turkish drama"],
+    faqs: [
+      { q: "Where can I watch Sen Çal Kapımı with English subtitles?", a: "On the official Star TV international YouTube channel with English, Arabic, Spanish, and other subtitle options." },
+      { q: "How many episodes does Sen Çal Kapımı have?", a: "52 episodes across 2 seasons." },
+      { q: "Did Hande Erçel and Kerem Bürsin date in real life?", a: "Yes — they dated for approximately two years after meeting on set, though they have since separated." },
+      { q: "How many views did Sen Çal Kapımı get on YouTube?", a: "Over 300 million views across all episodes on YouTube alone." },
+      { q: "Is Sen Çal Kapımı available on Netflix?", a: "Availability varies by region. It is on YouTube globally with multiple subtitle languages." }
+    ]
+  },
+  {
+    slug: "ertugrul-historical-accuracy-real-history",
+    title: "How Historically Accurate Is Diriliş: Ertuğrul? The Real History Behind the Drama",
+    excerpt: "Diriliş: Ertuğrul is watched by 500 million people worldwide, but how much of it is real history? We separate fact from fiction in the drama that changed Turkish television forever.",
+    content: `<p><strong>Diriliş: Ertuğrul</strong> has been watched by an estimated 500 million people across 60+ countries. For many of those viewers, it is their primary source of knowledge about 13th-century Anatolia and the origins of the Ottoman Empire. So a natural question follows: how much of it is actually true?</p>
+
+<p>The answer, like most things in historical drama, is complicated. Here is a careful, fact-based examination of what Ertugrul gets right — and what it invents.</p>
+
+<h2>What Is Historically True</h2>
+
+<p><strong>Ertuğrul Bey Was Real:</strong> This is the most important fact. Ertuğrul Bey (c. 1191–1280) was a genuine historical figure — the leader of the Kayı tribe of the Oghuz Turks and the father of Osman I, who founded the Ottoman Empire. His existence is documented in multiple historical sources.</p>
+
+<p><strong>The Kayı Tribe Migrated to Anatolia:</strong> The drama's premise — a Turkish tribe seeking a new homeland while the Mongols push west — is historically accurate. The Mongol expansion under Genghis Khan and his successors did displace numerous Turkic tribes who moved into Anatolia during this period.</p>
+
+<p><strong>The Seljuk Sultanate of Rum:</strong> The drama's portrayal of the Seljuk Sultanate of Rum as the dominant Muslim power in Anatolia during this period is historically correct. The Kayı tribe did operate under Seljuk suzerainty.</p>
+
+<p><strong>The Crusader Presence:</strong> Latin Crusader states did exist in the region during the 13th century, and conflicts between Muslim Turkic tribes and Crusader forces did occur. The drama's use of Crusader antagonists is historically plausible even if the specific conflicts depicted are fictionalized.</p>
+
+<h2>What Is Historical Fiction</h2>
+
+<p><strong>Most Characters Are Invented:</strong> While Ertuğrul, his father Suleyman Shah, and a few other figures have historical basis, most of the drama's characters — including the main antagonists and most of Ertuğrul's companions — are fictional creations designed to serve the story.</p>
+
+<p><strong>The Specific Plots:</strong> The specific conspiracies, battles, and political intrigues depicted in the drama are creative inventions. Historical records from this period are sparse, which gives writers significant creative freedom — but also means viewers should not treat specific events as documentary fact.</p>
+
+<p><strong>Ibn Arabi's Appearance:</strong> The famous Islamic scholar Ibn Arabi does appear in the drama as a mentor figure to Ertuğrul. Ibn Arabi was indeed alive during this approximate period (1165-1240), and his inclusion adds authentic historical texture — though his specific relationship with Ertuğrul as depicted is fictional.</p>
+
+<h2>The Historical Significance of Ertuğrul's Real Legacy</h2>
+
+<p>What makes Ertuğrul historically important is not any specific battle but what he built: a small, disciplined tribal confederation that his son Osman I would transform into one of history's greatest empires. The Ottoman Empire at its height controlled three continents, lasted 600 years, and shaped the modern world in ways still felt today. All of that began with Ertuğrul's tribal leadership in 13th-century Anatolia.</p>
+
+<h2>TurkVerse Verdict</h2>
+<p>Diriliş: Ertuğrul is excellent historical drama that uses a real historical foundation to tell a compelling fictional story. Its core premise and setting are historically grounded. Its specific plots and most characters are creative inventions. Watch it as inspired by history, not as a documentary — and enjoy one of television's great epic stories. <strong>TurkVerse Rating: 9.2/10</strong></p>`,
+    category: "reviews",
+    image: "https://images.unsplash.com/photo-1547153760-18fc86324498?w=800&q=80",
+    author: "TurkVerse Team",
+    readTime: "8 min read",
+    tags: ["Ertugrul historical accuracy", "Dirilis Ertugrul real history", "Ertugrul Bey history", "Ottoman Empire origins", "Kayi tribe history", "Turkish drama history", "Mongol invasion Anatolia"],
+    faqs: [
+      { q: "Was Ertuğrul Bey a real person?", a: "Yes — Ertuğrul Bey (c.1191-1280) was the real historical leader of the Kayı tribe and father of Osman I, founder of the Ottoman Empire." },
+      { q: "Is the story in Diriliş: Ertuğrul historically accurate?", a: "The setting, time period, and main character are historically real. The specific plots, most supporting characters, and events are creative fiction." },
+      { q: "Did the Kayı tribe really migrate to Anatolia?", a: "Yes — Turkic tribes including the Kayı did migrate into Anatolia during the 13th century due to Mongol expansion from the east." },
+      { q: "Was Ibn Arabi in the drama a real person?", a: "Yes — Ibn Arabi (1165-1240) was a real Islamic scholar. His specific relationship with Ertuğrul as depicted in the drama is fictional, but his existence is historical." },
+      { q: "How many episodes does Diriliş: Ertuğrul have?", a: "150 episodes across 5 seasons — one of the longest-running historical dramas in Turkish television history." }
+    ]
+  }
+];
+
+// Combine both pools
+const allPostPool = [...englishPostPool, ...postPool];
+
 // Find a post that hasn't been published yet
-const availablePosts = postPool.filter(p => !existingSlugs.has(p.slug));
+const availablePosts = allPostPool.filter(p => !existingSlugs.has(p.slug));
 
 if (availablePosts.length === 0) {
   console.log("All pre-written posts have been published. Add more to the pool.");

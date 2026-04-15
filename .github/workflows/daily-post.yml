@@ -19,8 +19,9 @@ jobs:
         run: node scripts/generate-post.mjs
       - name: Commit and push
         run: |
-          git config user.name "TurkVerse Bot"
-          git config user.email "bot@turkdrama.live"
+          git config user.name "umar2334"
+          git config user.email "umarfreelancerweb@gmail.com"
+
           git add data/posts.json
           git diff --staged --quiet || git commit -m "Daily post: $(date +'%B %d, %Y')"
           git push

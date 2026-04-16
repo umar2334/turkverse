@@ -41,11 +41,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export const dynamic = "force-dynamic";
 
-export async function generateStaticParams() {
-  const posts = await getPosts();
-  return posts.map((p) => ({ slug: p.slug }));
-}
-
 const categoryColors: Record<string, string> = {
   news: "bg-red-500",
   reviews: "bg-amber-500",

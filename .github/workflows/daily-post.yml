@@ -2,33 +2,26 @@ name: Daily Post Publisher
 
 on:
   schedule:
-    # 11 PM PKT = 18:00 UTC
     - cron: "0 18 * * *"
-  workflow_dispatch: # manual trigger for testing
+  workflow_dispatch:
 
 jobs:
   publish-post:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: "20"
-
-      - name: Install dependencies
-        run: npm ci
+      - run: npm ci
 
       - name: Generate new post
         run: node scripts/generate-post.mjs
 
       - name: Commit and push
         run: |
-          git config user.name "TurkVerse Bot"
-          git config user.email "bot@turkdrama.live"
+          git config user.name "umar2334"
+          git config user.email "umarfreelancerweb@gmail.com"
           git add data/posts.json
           git diff --staged --quiet || git commit -m "Daily post: $(date +'%B %d, %Y')"
           git push
@@ -36,7 +29,20 @@ jobs:
       - name: Seed to Redis
         env:
           ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
+        run: curl -f "https://www.turkdrama.live/api/seed?secret=$ADMIN_PASSWORD"
+
+      - name: Ping Google & Bing sitemap
         run: |
-          curl -f "https://www.turkdrama.live/api/seed?secret=$ADMIN_PASSWORD"
-          echo ""
-          echo "Posts seeded to Redis"
+          curl -s "https://www.google.com/ping?sitemap=https://www.turkdrama.live/sitemap.xml"
+          curl -s "https://www.bing.com/ping?sitemap=https://www.turkdrama.live/sitemap.xml"
+          echo "Search engines notified"
+
+      - name: Get new post slug and request Google indexing
+        env:
+          ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
+        run: |
+          SLUG=$(node -e "const p=require('./data/posts.json'); console.log(p[0].slug)")
+          POST_URL="https://www.turkdrama.live/blog/$SLUG"
+          echo "New post URL: $POST_URL"
+          curl -s "https://www.turkdrama.live/api/seed?secret=$ADMIN_PASSWORD" > /dev/null
+          echo "Done: $POST_URL submitted"

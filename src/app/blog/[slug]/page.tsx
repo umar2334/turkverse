@@ -146,7 +146,7 @@ export default async function BlogPostPage({ params }: Props) {
 
           {/* FAQs — Google rich snippets */}
           {post.faqs && post.faqs.length > 0 && (
-            <FaqSchema faqs={post.faqs} postUrl={`${BASE_URL}/blog/${post.slug}`} />
+            <FaqSchema faqs={post.faqs} />
           )}
 
           {/* AdSense — after content (high visibility) */}

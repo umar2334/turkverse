@@ -24,14 +24,7 @@ export default function AdSlot({ slot, format = "auto", className = "" }: Props)
   }, []);
 
   if (!PUB_ID) {
-    return (
-      <div className={`bg-slate-800 border border-dashed border-slate-600 rounded-xl flex items-center justify-center ${className}`}>
-        <div className="text-center">
-          <p className="text-slate-500 text-xs font-medium">Advertisement</p>
-          <p className="text-slate-700 text-xs mt-0.5">AdSense ID not set</p>
-        </div>
-      </div>
-    );
+    return null;
   }
 
   return (

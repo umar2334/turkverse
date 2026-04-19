@@ -52,7 +52,7 @@ export default function PrivacyPolicyPage() {
 
         <h2>Google Analytics</h2>
         <p>
-          We use Google Analytics to analyse the use of our website. Google Analytics gathers information about website use by means of cookies. The information gathered is used to create reports about the use of our website. Google's privacy policy is available at: www.google.com/policies/privacy/
+          We use Google Analytics to analyse the use of our website. Google Analytics gathers information about website use by means of cookies. The information gathered is used to create reports about the use of our website. Google&apos;s privacy policy is available at: www.google.com/policies/privacy/
         </p>
 
         <h2>Third-Party Links</h2>
@@ -60,7 +60,7 @@ export default function PrivacyPolicyPage() {
           Our website may contain links to third-party websites. These sites have their own privacy policies and we do not accept any responsibility or liability for their policies.
         </p>
 
-        <h2>Children's Privacy</h2>
+        <h2>Children&apos;s Privacy</h2>
         <p>
           TurkVerse does not knowingly collect any personal information from children under 13. If you believe your child has provided us with personal information, please contact us immediately.
         </p>

@@ -46,11 +46,6 @@ export default async function HomePage() {
         ))}
       </section>
 
-      {/* AdSense Banner slot */}
-      <div className="mb-8 bg-slate-800 border border-dashed border-slate-600 rounded-xl h-24 flex items-center justify-center">
-        <p className="text-slate-500 text-sm">Advertisement — 728×90 Leaderboard</p>
-      </div>
-
       {/* Main content + Sidebar */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
 
@@ -66,11 +61,6 @@ export default async function HomePage() {
                 <PostCard key={p.slug} post={p} />
               ))}
             </div>
-          </div>
-
-          {/* Second AdSense slot */}
-          <div className="bg-slate-800 border border-dashed border-slate-600 rounded-xl h-24 flex items-center justify-center">
-            <p className="text-slate-500 text-sm">Advertisement — 728×90</p>
           </div>
 
           {/* Series Reviews section */}

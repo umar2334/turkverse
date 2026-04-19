@@ -11,19 +11,59 @@ const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.turkdrama.live"),
   title: {
-    default: "TurkVerse — Turkish Series News, Reviews & Cast Biographies",
+    default: "TurkVerse — Turkish Drama Reviews, News & Cast Biographies",
     template: "%s | TurkVerse",
   },
   description:
-    "TurkVerse is your ultimate guide to Turkish dramas. Get the latest news, cast biographies, episode reviews, and release dates for all popular Turkish series.",
-  keywords: ["Turkish series", "Turkish drama", "Kurulus Osman", "Dirilis Ertugrul", "Turkish cast", "episode review"],
-  alternates: {
-    canonical: "https://www.turkdrama.live",
+    "Independent Turkish series review site. Read reviews, cast bios, release dates and news for Kurulus Osman, Ertugrul, Kardeslerim and more. We do not host or stream videos.",
+  keywords: [
+    "turkish dramas",
+    "kurulus osman",
+    "ertugrul",
+    "turkish series reviews",
+    "turkish drama urdu",
+    "pakistan turkish drama",
+    "kardeslerim",
+    "yali capkini",
+  ],
+  authors: [{ name: "TurkVerse Editorial Team" }],
+  creator: "TurkVerse",
+  publisher: "TurkVerse",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
   },
   openGraph: {
-    siteName: "TurkVerse",
     type: "website",
+    locale: "en_US",
     url: "https://www.turkdrama.live",
+    siteName: "TurkVerse",
+    title: "TurkVerse — Turkish Drama Reviews & News",
+    description: "Your ultimate guide to Turkish series, cast biographies and release dates.",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "TurkVerse",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "TurkVerse — Turkish Drama Reviews",
+    description: "Reviews, cast bios and news for Turkish dramas.",
+    images: ["/og-image.jpg"],
+  },
+  alternates: {
+    canonical: "https://www.turkdrama.live",
   },
 };
 
@@ -44,6 +84,26 @@ export default function RootLayout({
         )}
       </head>
       <body className="min-h-full flex flex-col bg-slate-950 text-slate-100">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "TurkVerse",
+              url: "https://www.turkdrama.live",
+              description: "Turkish drama reviews, news and cast biographies",
+              publisher: {
+                "@type": "Organization",
+                name: "TurkVerse",
+                logo: {
+                  "@type": "ImageObject",
+                  url: "https://www.turkdrama.live/logo.png",
+                },
+              },
+            }),
+          }}
+        />
         {GA_ID && (
           <>
             <Script

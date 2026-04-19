@@ -2,10 +2,9 @@ type FaqItem = { q: string; a: string };
 
 type Props = {
   faqs: FaqItem[];
-  postUrl: string;
 };
 
-export default function FaqSchema({ faqs, postUrl }: Props) {
+export default function FaqSchema({ faqs }: Props) {
   if (!faqs.length) return null;
 
   const schema = {

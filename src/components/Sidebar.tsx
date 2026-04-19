@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { getRecentPosts } from "@/lib/posts";
 import PostCard from "./PostCard";
 import AdSlot from "./AdSlot";

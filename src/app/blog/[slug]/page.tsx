@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Image from "next/image";
-import Link from "next/link";
 import { getPostBySlug, getPosts } from "@/lib/posts";
 import PostCard from "@/components/PostCard";
 import Sidebar from "@/components/Sidebar";
 import AdSlot from "@/components/AdSlot";
 import FaqSchema from "@/components/FaqSchema";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.turkdrama.live";
 
@@ -100,16 +100,13 @@ export default async function BlogPostPage({ params }: Props) {
 
         {/* Article */}
         <article className="lg:col-span-2">
-          {/* Breadcrumb */}
-          <nav className="text-sm text-slate-400 mb-4 flex items-center gap-2">
-            <Link href="/" className="hover:text-amber-400">Home</Link>
-            <span>/</span>
-            <Link href={`/category/${post.category}`} className="hover:text-amber-400 capitalize">
-              {categoryLabels[post.category] ?? post.category}
-            </Link>
-            <span>/</span>
-            <span className="text-slate-300 truncate">{post.title}</span>
-          </nav>
+          <Breadcrumbs
+            items={[
+              { name: "Home", href: "/" },
+              { name: categoryLabels[post.category] ?? post.category, href: `/category/${post.category}` },
+              { name: post.title },
+            ]}
+          />
 
           {/* Badge */}
           <span className={`text-xs font-bold px-3 py-1 rounded-full text-white ${categoryColors[post.category] ?? "bg-slate-500"}`}>

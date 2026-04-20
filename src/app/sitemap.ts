@@ -1,10 +1,12 @@
 import { MetadataRoute } from "next";
 import { getPosts } from "@/lib/posts";
 import { getAllSeries } from "@/lib/series";
+import { getAllEpisodes, getEpisodeSlug } from "@/lib/episodes";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const posts = await getPosts();
   const series = getAllSeries();
+  const episodes = getAllEpisodes();
 
   const staticRoutes: MetadataRoute.Sitemap = [
     {
@@ -83,5 +85,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     changeFrequency: "weekly" as const,
   }));
 
-  return [...staticRoutes, ...postRoutes, ...seriesRoutes];
+  const episodeRoutes: MetadataRoute.Sitemap = episodes.map((e) => ({
+    url: `https://www.turkdrama.live/series/${e.seriesSlug}/episode/${getEpisodeSlug(e.season, e.episode)}`,
+    lastModified: new Date(e.airDate),
+    priority: 0.75,
+    changeFrequency: "monthly" as const,
+  }));
+
+  return [...staticRoutes, ...postRoutes, ...seriesRoutes, ...episodeRoutes];
 }

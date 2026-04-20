@@ -5,9 +5,10 @@ import Sidebar from "@/components/Sidebar";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "TurkVerse — Turkish Series News, Reviews & Cast Biographies",
+  title: "TurkVerse — Turkish Drama Urdu Recaps, Episode Guide & Cast Biographies",
   description:
-    "Latest Turkish drama news, episode reviews, cast biographies, and release dates. Your #1 source for Kurulus Osman, Dirilis Ertugrul, and all popular Turkish series.",
+    "Latest Turkish drama news in Urdu — episode recaps, story summaries, cast bios and where to watch legally. Kurulus Osman, Kurulus Orhan, Dirilis Ertugrul, Alparslan, Teskilat, Kardeslerim and more.",
+  alternates: { canonical: "https://www.turkdrama.live" },
 };
 
 export default async function HomePage() {

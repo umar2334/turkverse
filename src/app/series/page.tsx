@@ -5,9 +5,25 @@ import { getAllSeries } from "@/lib/series";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
-  title: "All Turkish Dramas — Complete Series Database",
+  title: "All Turkish Dramas in Urdu — Complete Series Database & Episode Guide",
   description:
-    "Browse every Turkish drama on TurkVerse — Kurulus Osman, Dirilis Ertugrul, Barbaros, Alparslan, Teskilat, Kardeslerim, Yali Capkini and more. Find cast, seasons, ratings and where to watch.",
+    "Complete list of Turkish dramas in Urdu — Kurulus Osman, Kurulus Orhan, Dirilis Ertugrul, Barbaros, Alparslan Buyuk Selcuklu, Teskilat, Kardeslerim, Yali Capkini. Episode recaps, cast bios, seasons, ratings and legal streaming options for Pakistani viewers.",
+  keywords: [
+    "turkish drama list urdu",
+    "all turkish dramas",
+    "turkish series database",
+    "turkish historical dramas urdu",
+    "kurulus osman urdu",
+    "kurulus orhan urdu",
+    "ertugrul urdu",
+    "alparslan urdu",
+    "teskilat urdu",
+    "kardeslerim urdu",
+    "yali capkini urdu",
+    "barbaros hayreddin urdu",
+    "turkish drama urdu recap",
+    "where to watch turkish drama pakistan",
+  ],
   alternates: { canonical: "https://www.turkdrama.live/series" },
 };
 

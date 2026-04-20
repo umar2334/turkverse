@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { getAllSeries, getSeriesBySlug } from "@/lib/series";
+import { getEpisodesBySeries, getEpisodeSlug } from "@/lib/episodes";
 import { getPosts } from "@/lib/posts";
 import PostCard from "@/components/PostCard";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -22,14 +23,27 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const series = getSeriesBySlug(slug);
   if (!series) return { title: "Series Not Found" };
+  const urduKeywords = [
+    `${series.name} urdu`,
+    `${series.name} urdu recap`,
+    `${series.name} episode recap urdu`,
+    `${series.name} story in urdu`,
+    `${series.name} cast`,
+    `${series.name} cast biography`,
+    `${series.name} season 1`,
+    `${series.name} where to watch`,
+    `${series.name} urdu subtitles review`,
+    `${series.name} ${series.firstAired}`,
+    `watch ${series.name} legally in pakistan`,
+  ];
   return {
-    title: `${series.name} — Cast, Seasons, Episodes & Where to Watch`,
-    description: `${series.name} (${series.firstAired}) — ${series.tagline}. ${series.seasons} seasons, ${series.episodes} episodes on ${series.network}. Find cast, reviews and streaming options.`,
-    keywords: series.tags,
+    title: `${series.name} — Urdu Recap, Episode Guide, Cast Biography & Where to Watch`,
+    description: `${series.name} (${series.firstAired}) in Urdu — ${series.tagline}. Complete story summary, episode-wise recaps, cast biographies, ${series.seasons} seasons on ${series.network}, and legal streaming options in Pakistan. ${series.description.slice(0, 100)}`,
+    keywords: [...series.tags, ...urduKeywords],
     alternates: { canonical: `${BASE_URL}/series/${series.slug}` },
     openGraph: {
-      title: `${series.name} — Complete Guide`,
-      description: series.tagline,
+      title: `${series.name} — Complete Urdu Recap & Episode Guide`,
+      description: `${series.tagline} — Urdu recap, cast bios and where to watch legally.`,
       images: [{ url: series.poster, width: 1200, height: 630, alt: series.name }],
       type: "article",
     },
@@ -49,6 +63,8 @@ export default async function SeriesDetailPage({ params }: Props) {
       return lowerTags.some((t) => haystack.includes(t));
     })
     .slice(0, 6);
+
+  const episodes = getEpisodesBySeries(slug);
 
   const tvSchema = {
     "@context": "https://schema.org",
@@ -145,6 +161,42 @@ export default async function SeriesDetailPage({ params }: Props) {
             TurkVerse does not host or stream videos. Links refer to third-party platforms.
           </p>
         </section>
+
+        {/* Episode Recaps */}
+        {episodes.length > 0 && (
+          <section className="mb-10">
+            <div className="flex items-center gap-3 mb-5">
+              <span className="w-1 h-6 bg-amber-500 rounded-full" />
+              <h2 className="text-xl font-bold text-white">
+                {series.name} Episode Recaps in Urdu
+              </h2>
+            </div>
+            <p className="text-slate-400 text-sm mb-5">
+              Complete episode-wise Urdu story summaries, key moments, and analysis. {episodes.length} episode recap{episodes.length === 1 ? "" : "s"} available.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {episodes.map((e) => (
+                <Link
+                  key={`${e.season}-${e.episode}`}
+                  href={`/series/${series.slug}/episode/${getEpisodeSlug(e.season, e.episode)}`}
+                  className="group bg-slate-800 border border-slate-700 hover:border-amber-500 rounded-xl p-4 transition-colors"
+                >
+                  <div className="flex items-center gap-2 text-xs mb-2">
+                    <span className="bg-amber-500 text-slate-900 font-bold px-2 py-0.5 rounded">
+                      S{e.season}E{e.episode}
+                    </span>
+                    <span className="text-slate-500">{e.airDate}</span>
+                  </div>
+                  <h3 className="text-white font-semibold group-hover:text-amber-400 transition-colors mb-1">
+                    {e.title}
+                  </h3>
+                  <p className="text-amber-400 text-xs italic mb-2">{e.titleUrdu}</p>
+                  <p className="text-slate-400 text-xs line-clamp-2">{e.spoilerFree}</p>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* FAQs */}
         {series.faqs.length > 0 && <FaqSchema faqs={series.faqs} />}

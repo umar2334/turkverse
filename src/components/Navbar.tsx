@@ -1,13 +1,14 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import SearchBar from "./SearchBar";
 
 const navLinks = [
   { label: "Home", href: "/" },
-  { label: "Latest News", href: "/category/news" },
+  { label: "Series", href: "/series" },
+  { label: "News", href: "/category/news" },
   { label: "Reviews", href: "/category/reviews" },
-  { label: "Cast Bio", href: "/category/cast" },
-  { label: "Release Dates", href: "/category/release-dates" },
+  { label: "Watchlist", href: "/watchlist" },
 ];
 
 export default function Navbar() {
@@ -28,7 +29,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-6">
+        <nav className="hidden md:flex items-center gap-5">
           {navLinks.map((l) => (
             <Link
               key={l.href}
@@ -38,6 +39,9 @@ export default function Navbar() {
               {l.label}
             </Link>
           ))}
+          <div className="w-56">
+            <SearchBar />
+          </div>
         </nav>
 
         {/* Mobile hamburger */}
@@ -59,6 +63,7 @@ export default function Navbar() {
       {/* Mobile menu */}
       {open && (
         <div className="md:hidden bg-slate-800 border-t border-slate-700 px-4 py-3 flex flex-col gap-3">
+          <SearchBar onSubmit={() => setOpen(false)} />
           {navLinks.map((l) => (
             <Link
               key={l.href}

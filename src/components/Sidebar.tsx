@@ -1,6 +1,7 @@
 import { getRecentPosts } from "@/lib/posts";
 import PostCard from "./PostCard";
 import AdSlot from "./AdSlot";
+import Newsletter from "./Newsletter";
 
 export default async function Sidebar() {
   const recent = await getRecentPosts(5);
@@ -56,18 +57,7 @@ export default async function Sidebar() {
       </div>
 
       {/* Newsletter */}
-      <div className="bg-gradient-to-br from-amber-500/20 to-amber-600/10 border border-amber-500/30 rounded-xl p-5">
-        <h3 className="text-white font-bold mb-1">Stay Updated</h3>
-        <p className="text-slate-400 text-sm mb-4">Get the latest Turkish drama news in your inbox.</p>
-        <input
-          type="email"
-          placeholder="Your email address"
-          className="w-full bg-slate-800 border border-slate-600 text-slate-200 text-sm rounded-lg px-3 py-2 mb-3 focus:outline-none focus:border-amber-500"
-        />
-        <button className="w-full bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold text-sm py-2 rounded-lg transition-colors">
-          Subscribe
-        </button>
-      </div>
+      <Newsletter />
     </aside>
   );
 }

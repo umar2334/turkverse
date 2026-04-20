@@ -1,0 +1,241 @@
+[
+  {
+    "slug": "kurulus-osman",
+    "name": "Kurulus Osman",
+    "tagline": "The Rise of the Ottoman Empire",
+    "poster": "https://images.unsplash.com/photo-1560169897-fc0cdbdfa4d5?w=800&q=80",
+    "description": "Kurulus Osman is a Turkish historical drama chronicling the life of Osman Bey, the founder of the Ottoman Empire. A sequel to the wildly popular Dirilis Ertugrul, it follows Osman's journey from a young warrior to the ruler of a state that would shape world history for six centuries. The series blends political intrigue, epic battles and family drama with stunning cinematography and powerful performances.",
+    "seasons": 6,
+    "firstAired": "2019",
+    "status": "Ongoing",
+    "network": "ATV",
+    "genre": "Historical Drama",
+    "language": "Turkish (Urdu dubbed available)",
+    "episodes": "190+",
+    "leadCast": [
+      { "name": "Burak Ozcivit", "role": "Osman Bey" },
+      { "name": "Ozge Torer", "role": "Bala Hatun" },
+      { "name": "Yildiz Cagri Atiksoy", "role": "Malhun Hatun" },
+      { "name": "Emre Basaran", "role": "Cerkutay" }
+    ],
+    "whereToWatch": [
+      "ATV (Turkey — original)",
+      "YouTube (ATV Official — free with Urdu subs)",
+      "GiveMe5 (Pakistan)",
+      "MakkiTV (Urdu dubbed)"
+    ],
+    "tags": ["Kurulus Osman", "kurulus osman", "Osman Bey", "Burak Ozcivit"],
+    "faqs": [
+      {
+        "q": "How many seasons of Kurulus Osman are there?",
+        "a": "As of 2026, Kurulus Osman has completed 6 seasons with a 7th season in production. The show airs new episodes every Wednesday on ATV."
+      },
+      {
+        "q": "Where can I watch Kurulus Osman with Urdu subtitles in Pakistan?",
+        "a": "You can watch Kurulus Osman with Urdu subtitles on GiveMe5, MakkiTV and the official ATV YouTube channel (which adds subtitles within hours of the Turkey broadcast)."
+      },
+      {
+        "q": "Is Kurulus Osman based on a true story?",
+        "a": "Yes. Kurulus Osman is based on the life of Osman I, the founder of the Ottoman Empire who lived from approximately 1258 to 1326. While the show dramatizes many events, the core historical timeline and major figures are real."
+      }
+    ]
+  },
+  {
+    "slug": "dirilis-ertugrul",
+    "name": "Dirilis Ertugrul",
+    "tagline": "Resurrection of a Legend",
+    "poster": "https://images.unsplash.com/photo-1572177812156-58036aae439c?w=800&q=80",
+    "description": "Dirilis Ertugrul is the critically acclaimed Turkish historical drama that tells the story of Ertugrul Bey, father of Osman I and the leader who laid the groundwork for the Ottoman Empire. The show became a global phenomenon, particularly in Pakistan, where former Prime Minister Imran Khan urged citizens to watch it. Over five seasons, viewers follow Ertugrul's battles against Crusaders, Mongols and internal betrayals.",
+    "seasons": 5,
+    "firstAired": "2014",
+    "status": "Completed",
+    "network": "TRT 1",
+    "genre": "Historical Drama",
+    "language": "Turkish (Urdu dubbed available)",
+    "episodes": "150 (original) / 448 (dubbed episodes)",
+    "leadCast": [
+      { "name": "Engin Altan Duzyatan", "role": "Ertugrul Bey" },
+      { "name": "Esra Bilgic", "role": "Halime Sultan" },
+      { "name": "Cavit Cetin Guner", "role": "Dogan Alp" },
+      { "name": "Nurettin Sonmez", "role": "Bamsi Beyrek" }
+    ],
+    "whereToWatch": [
+      "PTV Home (Urdu dubbed — original Pakistan broadcast)",
+      "YouTube (PTV Home official channel — free)",
+      "Netflix (select regions)",
+      "TRT (Turkish original)"
+    ],
+    "tags": ["Dirilis Ertugrul", "ertugrul", "Ertugrul Ghazi", "Engin Altan", "Esra Bilgic"],
+    "faqs": [
+      {
+        "q": "Is Dirilis Ertugrul finished?",
+        "a": "Yes. Dirilis Ertugrul concluded in 2019 after 5 seasons and 150 original Turkish episodes. The story continues in its sequel, Kurulus Osman."
+      },
+      {
+        "q": "Where can I watch Ertugrul Ghazi in Urdu for free?",
+        "a": "The PTV Home official YouTube channel has all 5 seasons dubbed in Urdu, completely free to stream. You can also find episodes on GiveMe5 and MakkiTV."
+      },
+      {
+        "q": "Is Ertugrul a true story?",
+        "a": "Ertugrul Bey was a real 13th-century Turkish tribal leader and the father of Osman I. The show dramatizes his life with many fictional elements, but the historical framework is real."
+      }
+    ]
+  },
+  {
+    "slug": "barbaros-hayreddin",
+    "name": "Barbaros Hayreddin",
+    "tagline": "The Sultan's Edict",
+    "poster": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80",
+    "description": "Barbaros Hayreddin: Sultanin Fermani tells the epic tale of Barbaros Hayreddin Pasha, the legendary Ottoman admiral who dominated the Mediterranean in the 16th century. This sequel to Barbaroslar follows his rise to become the Grand Admiral of the Ottoman Navy. Starring Ulas Tuna Astepe and Engin Altan Duzyatan, the show blends naval battles, political intrigue and historical drama on an unprecedented scale.",
+    "seasons": 2,
+    "firstAired": "2021",
+    "status": "Ongoing",
+    "network": "TRT 1",
+    "genre": "Historical / Naval Drama",
+    "language": "Turkish (Urdu dubbed available)",
+    "episodes": "40+",
+    "leadCast": [
+      { "name": "Ulas Tuna Astepe", "role": "Barbaros Hayreddin" },
+      { "name": "Engin Altan Duzyatan", "role": "Oruc Reis" },
+      { "name": "Pelin Akil", "role": "Despina" }
+    ],
+    "whereToWatch": [
+      "TRT 1 (Turkey — original)",
+      "TRT Official YouTube (with Urdu subtitles)",
+      "GiveMe5 (Pakistan)"
+    ],
+    "tags": ["Barbaros", "barbaros hayreddin", "Ottoman Navy", "Ulas Tuna Astepe"],
+    "faqs": [
+      {
+        "q": "Who plays Barbaros Hayreddin?",
+        "a": "Ulas Tuna Astepe plays the lead role of Barbaros Hayreddin Pasha in the TRT historical drama."
+      },
+      {
+        "q": "Is Barbaros available with Urdu subtitles?",
+        "a": "Yes. TRT's official YouTube channel releases episodes with Urdu subtitles, and Pakistani platforms like GiveMe5 also host dubbed versions."
+      }
+    ]
+  },
+  {
+    "slug": "alparslan-buyuk-selcuklu",
+    "name": "Alparslan: Buyuk Selcuklu",
+    "tagline": "The Great Seljuk Warrior",
+    "poster": "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&q=80",
+    "description": "Alparslan: Buyuk Selcuklu chronicles the life of Sultan Alp Arslan, the second sultan of the Seljuk Empire who won the pivotal Battle of Manzikert against the Byzantine Empire in 1071 — a victory that opened Anatolia to Turkish settlement and laid the foundations for modern Turkey. The series is a spiritual prequel to Dirilis Ertugrul in the same historical universe.",
+    "seasons": 2,
+    "firstAired": "2021",
+    "status": "Completed",
+    "network": "TRT 1",
+    "genre": "Historical Drama",
+    "language": "Turkish (Urdu dubbed available)",
+    "episodes": "62",
+    "leadCast": [
+      { "name": "Baris Arduc", "role": "Alp Arslan" },
+      { "name": "Fahriye Evcen", "role": "Akca Hatun" }
+    ],
+    "whereToWatch": [
+      "TRT 1 (Turkey — original)",
+      "TRT Official YouTube (Urdu subs)",
+      "PTV (Urdu dubbed in Pakistan)"
+    ],
+    "tags": ["Alparslan", "alparslan buyuk selcuklu", "Seljuk", "Baris Arduc"],
+    "faqs": [
+      {
+        "q": "Is Alparslan connected to Ertugrul?",
+        "a": "Yes, thematically. Alparslan is set about 200 years before Ertugrul and tells the origin story of the Turkish presence in Anatolia, which made Ertugrul's and Osman's later states possible."
+      }
+    ]
+  },
+  {
+    "slug": "teskilat",
+    "name": "Teskilat",
+    "tagline": "Turkey's Intelligence Heroes",
+    "poster": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=800&q=80",
+    "description": "Teskilat (The Organization) is a modern action-drama depicting the work of Turkey's National Intelligence Organization (MIT). The series follows elite agents as they battle terrorism, espionage and foreign threats to protect Turkey's national security. With high-stakes missions, explosive action and emotional depth, Teskilat has become one of TRT's biggest modern hits.",
+    "seasons": 4,
+    "firstAired": "2021",
+    "status": "Ongoing",
+    "network": "TRT 1",
+    "genre": "Action / Espionage",
+    "language": "Turkish",
+    "episodes": "100+",
+    "leadCast": [
+      { "name": "Caglar Ertugrul", "role": "Serdar" },
+      { "name": "Deniz Baysal", "role": "Zehra" },
+      { "name": "Mesut Akusta", "role": "Hulusi" }
+    ],
+    "whereToWatch": [
+      "TRT 1 (Turkey)",
+      "TRT Official YouTube (Urdu subs)"
+    ],
+    "tags": ["Teskilat", "teskilat drama", "Turkish MIT", "Caglar Ertugrul"],
+    "faqs": [
+      {
+        "q": "Is Teskilat based on real MIT operations?",
+        "a": "The series is inspired by Turkey's real intelligence agency and dramatizes the kinds of operations MIT agents conduct, though specific characters and storylines are fictional."
+      }
+    ]
+  },
+  {
+    "slug": "kardeslerim",
+    "name": "Kardeslerim",
+    "tagline": "My Brothers and Sisters",
+    "poster": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=80",
+    "description": "Kardeslerim is a heart-wrenching Turkish family drama about four orphaned siblings — Kadir, Omer, Asiye and Emel — who fight to stay together after losing their parents. The series explores themes of poverty, love, sacrifice and resilience, with the siblings' bond as its emotional core. It has become one of the most-watched Turkish family dramas of the 2020s.",
+    "seasons": 5,
+    "firstAired": "2021",
+    "status": "Ongoing",
+    "network": "ATV",
+    "genre": "Family Drama",
+    "language": "Turkish",
+    "episodes": "140+",
+    "leadCast": [
+      { "name": "Halit Ozgur Sari", "role": "Kadir Eren" },
+      { "name": "Onur Seyit Yaran", "role": "Omer Eren" },
+      { "name": "Su Burcu Yazgi Coskun", "role": "Asiye Eren" },
+      { "name": "Aylin Akpinar", "role": "Emel Eren" }
+    ],
+    "whereToWatch": [
+      "ATV (Turkey)",
+      "ATV YouTube (Urdu subs)",
+      "GiveMe5 (Pakistan dubbed)"
+    ],
+    "tags": ["Kardeslerim", "kardeslerim drama", "Turkish family drama", "Halit Ozgur Sari"],
+    "faqs": [
+      {
+        "q": "How many episodes of Kardeslerim are there?",
+        "a": "As of 2026, Kardeslerim has over 140 episodes across 5 seasons and continues to air weekly on ATV."
+      }
+    ]
+  },
+  {
+    "slug": "yali-capkini",
+    "name": "Yali Capkini",
+    "tagline": "The Golden Boy",
+    "poster": "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&q=80",
+    "description": "Yali Capkini is a hugely popular romantic drama about Ferit, a wealthy playboy from an elite Istanbul family, who is forced into an arranged marriage with Seyran, a young woman from a conservative village family. What begins as a clash of worlds slowly transforms into a passionate love story. The series has dominated Turkish TV ratings since its 2022 premiere.",
+    "seasons": 4,
+    "firstAired": "2022",
+    "status": "Ongoing",
+    "network": "Star TV",
+    "genre": "Romance / Drama",
+    "language": "Turkish",
+    "episodes": "90+",
+    "leadCast": [
+      { "name": "Mert Ramazan Demir", "role": "Ferit Korhan" },
+      { "name": "Afra Saracoglu", "role": "Seyran" }
+    ],
+    "whereToWatch": [
+      "Star TV (Turkey)",
+      "Blu TV / Star TV YouTube (Urdu subs)",
+      "GiveMe5"
+    ],
+    "tags": ["Yali Capkini", "yali capkini", "Mert Ramazan Demir", "Afra Saracoglu"],
+    "faqs": [
+      {
+        "q": "Is Yali Capkini still airing?",
+        "a": "Yes. Yali Capkini continues to air new episodes weekly on Star TV in Turkey and remains one of the country's top-rated romantic dramas."
+      }
+    ]
+  }
+]

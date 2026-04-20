@@ -1,8 +1,10 @@
 import { MetadataRoute } from "next";
 import { getPosts } from "@/lib/posts";
+import { getAllSeries } from "@/lib/series";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const posts = await getPosts();
+  const series = getAllSeries();
 
   const staticRoutes: MetadataRoute.Sitemap = [
     {
@@ -59,6 +61,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.3,
       changeFrequency: "yearly" as const,
     },
+    {
+      url: "https://www.turkdrama.live/series",
+      lastModified: new Date(),
+      priority: 0.9,
+      changeFrequency: "weekly" as const,
+    },
   ];
 
   const postRoutes: MetadataRoute.Sitemap = posts.map((post) => ({
@@ -68,5 +76,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     changeFrequency: "monthly" as const,
   }));
 
-  return [...staticRoutes, ...postRoutes];
+  const seriesRoutes: MetadataRoute.Sitemap = series.map((s) => ({
+    url: `https://www.turkdrama.live/series/${s.slug}`,
+    lastModified: new Date(),
+    priority: 0.85,
+    changeFrequency: "weekly" as const,
+  }));
+
+  return [...staticRoutes, ...postRoutes, ...seriesRoutes];
 }

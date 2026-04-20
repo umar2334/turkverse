@@ -7,6 +7,7 @@ import Sidebar from "@/components/Sidebar";
 import AdSlot from "@/components/AdSlot";
 import FaqSchema from "@/components/FaqSchema";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import Comments from "@/components/Comments";
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.turkdrama.live";
 
@@ -191,6 +192,9 @@ export default async function BlogPostPage({ params }: Props) {
               </a>
             </div>
           </div>
+
+          {/* Comments */}
+          <Comments term={post.slug} />
 
           {/* Related posts */}
           {related.length > 0 && (

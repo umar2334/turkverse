@@ -1,43 +1,52 @@
 const STORAGE_KEY = "turkverse_watchlist";
 const EVENT = "watchlist:change";
+const EMPTY: string[] = [];
 
-function read(): string[] {
-  if (typeof window === "undefined") return [];
+let snapshot: string[] = EMPTY;
+let initialized = false;
+
+function readFromStorage(): string[] {
+  if (typeof window === "undefined") return EMPTY;
   try {
     const raw = window.localStorage.getItem(STORAGE_KEY);
-    return raw ? (JSON.parse(raw) as string[]) : [];
+    const parsed = raw ? (JSON.parse(raw) as string[]) : EMPTY;
+    return Array.isArray(parsed) && parsed.length > 0 ? parsed : EMPTY;
   } catch {
-    return [];
+    return EMPTY;
   }
-}
-
-function write(list: string[]) {
-  window.localStorage.setItem(STORAGE_KEY, JSON.stringify(list));
-  window.dispatchEvent(new CustomEvent(EVENT));
 }
 
 export function getWatchlist(): string[] {
-  return read();
+  if (!initialized && typeof window !== "undefined") {
+    snapshot = readFromStorage();
+    initialized = true;
+  }
+  return snapshot;
 }
 
 export function getServerWatchlist(): string[] {
-  return [];
+  return EMPTY;
 }
 
 export function toggleWatchlist(slug: string) {
-  const list = read();
-  if (list.includes(slug)) {
-    write(list.filter((s) => s !== slug));
-  } else {
-    write([...list, slug]);
-  }
+  const current = readFromStorage();
+  const next = current.includes(slug)
+    ? current.filter((s) => s !== slug)
+    : [...current, slug];
+  window.localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+  snapshot = next.length > 0 ? next : EMPTY;
+  window.dispatchEvent(new CustomEvent(EVENT));
 }
 
 export function subscribeWatchlist(cb: () => void): () => void {
-  window.addEventListener(EVENT, cb);
-  window.addEventListener("storage", cb);
+  const handler = () => {
+    snapshot = readFromStorage();
+    cb();
+  };
+  window.addEventListener(EVENT, handler);
+  window.addEventListener("storage", handler);
   return () => {
-    window.removeEventListener(EVENT, cb);
-    window.removeEventListener("storage", cb);
+    window.removeEventListener(EVENT, handler);
+    window.removeEventListener("storage", handler);
   };
 }

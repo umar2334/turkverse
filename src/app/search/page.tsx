@@ -25,12 +25,17 @@ export default async function SearchPage({ searchParams }: Props) {
   const query = q?.trim() ?? "";
   const allPosts = await getPosts();
 
-  const results = query
+  const words = query
+    .toLowerCase()
+    .split(/\s+/)
+    .filter((w) => w.length > 0);
+
+  const results = words.length
     ? allPosts.filter((p) => {
         const haystack = [p.title, p.excerpt, p.tags.join(" "), p.category]
           .join(" ")
           .toLowerCase();
-        return haystack.includes(query.toLowerCase());
+        return words.every((w) => haystack.includes(w));
       })
     : [];
 

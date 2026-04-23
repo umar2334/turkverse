@@ -50,13 +50,24 @@ function getPostsFromFile(): Post[] {
 }
 
 export async function getPosts(): Promise<Post[]> {
-  if (!redis) return getPostsFromFile();
+  const filePosts = getPostsFromFile();
+  if (!redis) return filePosts;
   try {
-    const posts = await redis.get<Post[]>("posts");
-    if (posts && posts.length > 0) return posts;
-    return getPostsFromFile();
+    const redisPosts = (await redis.get<Post[]>("posts")) ?? [];
+    const seen = new Set(filePosts.map((p) => p.slug));
+    const adminOnly = redisPosts.filter((p) => !seen.has(p.slug));
+    const merged = [...filePosts, ...adminOnly];
+    merged.sort((a, b) => {
+      const da = Date.parse(a.date);
+      const db = Date.parse(b.date);
+      if (isNaN(da) && isNaN(db)) return 0;
+      if (isNaN(da)) return 1;
+      if (isNaN(db)) return -1;
+      return db - da;
+    });
+    return merged;
   } catch {
-    return getPostsFromFile();
+    return filePosts;
   }
 }
 
